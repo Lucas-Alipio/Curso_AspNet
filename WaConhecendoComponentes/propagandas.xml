@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/imagens/coca.jpg</ImageUrl>
+		<NavigateUrl>https://www.google.com/</NavigateUrl>
+		<AlternateText>Naruto</AlternateText>
+		<Impressions>20</Impressions>
+		<Keyword>naruto</Keyword>
+	</Ad>
+
+	<Ad>
+		<ImageUrl>~/imagens/pepsi.jpg</ImageUrl>
+		<NavigateUrl>https://www.google.com/</NavigateUrl>
+		<AlternateText>Daki</AlternateText>
+		<Impressions>20</Impressions>
+		<Keyword>daki</Keyword>
+	</Ad>
+</Advertisements>

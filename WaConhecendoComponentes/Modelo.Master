@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Modelo.master.cs" Inherits="WaConhecendoComponentes.Modelo" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <main>
+        <form id="form1" runat="server">
+            <header>
+                <h1>Topo</h1>
+            </header>
+
+            <menu>
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/wfCursos.aspx" Text="Cursos" Value="Cursos"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/wfComponentes1.aspx" Text="Componentes" Value="Componentes"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/wfTabuada.aspx" Text="Tabuada" Value="Tabuada"></asp:MenuItem>
+                        <asp:MenuItem Text="Cadastro" Value="Cadastro"></asp:MenuItem>
+                        <asp:MenuItem Text="Relatórios" Value="Relatórios"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </menu>
+
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <h1>rodape</h1>
+    </footer>
+    
+</body>
+</html>
