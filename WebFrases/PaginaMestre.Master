@@ -9,6 +9,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="CSS/Estilos.css" rel="stylesheet" />
+    <script type="text/javascript" src="JavaScriptFunctions.js"></script>
 </head>
 
 <body>
@@ -28,6 +29,11 @@
 
         <main>
             <div>
+                <div id="cxFloatMsg" class="cxFloatMsg" onclick="HideMsg()">
+                    <h2 id="msgTitulo">A mensagem</h2>
+                    <p id="msgTexto">A mensagem</p>
+                </div>
+
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>

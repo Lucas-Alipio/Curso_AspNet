@@ -74,6 +74,7 @@
     <Content Include="Frase.aspx" />
     <Content Include="IMAGENS\SISTEMA\Logo.png" />
     <Content Include="IMAGENS\SISTEMA\topocurso.png" />
+    <Content Include="JavaScriptFunctions.js" />
     <Content Include="Login.aspx" />
     <Content Include="Usuario.aspx" />
     <Content Include="Web.config" />

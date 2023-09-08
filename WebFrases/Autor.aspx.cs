@@ -52,7 +52,7 @@ namespace WebFrases
                 if (btn_Salvar.Text == "Inserir")
                 {
                     dalA.Inserir(obj);
-                    msg = "<script> alert('O código gerado foi: " + obj.Id.ToString() + "');</script>";
+                    msg = "<script> ShowMsg('Sucesso!!', 'O código gerado foi: " + obj.Id.ToString() + "');</script>";
                 }
                 else
                 {
@@ -68,18 +68,19 @@ namespace WebFrases
                     }
 
                     dalA.Alterar(obj);
-                    msg = "<script> alert('Registro alterado corretamente!!!!!');</script>";
+                    msg = "<script> ShowMsg('Sucesso!!', 'Registro alterado corretamente!!!');</script>";
                 }
 
-                Response.Write(msg);
-
+                //Response.Write(msg);
+                PlaceHolder1.Controls.Add(new LiteralControl(msg));
                 this.LimparCampos();
                 AtualizaGrid();
             }
             catch (Exception erro)
             {
 
-                Response.Write("<script> alert('Erro: " + erro.Message.ToString() + "');</script>");
+                msg = "<script> ShowMsg('Erro Inesperado!!', 'Erro: " + erro.Message.ToString() + "');</script>";
+                PlaceHolder1.Controls.Add(new LiteralControl(msg));
             }
         }
         protected void btn_Cancelar_Click1(object sender, EventArgs e)
