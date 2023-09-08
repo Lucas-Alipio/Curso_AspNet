@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMestre.master.cs" Inherits="WebFrases.PaginaMestre" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/Estilos.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <asp:ImageButton CssClass="linkhome" ID="ImageButton1" ImageUrl="~/IMAGENS/SISTEMA/topocurso.png" runat="server" PostBackUrl="~/Default.aspx"/>
+            <nav>
+                <h1>Crie Sites ASP.NET (WebForms) utilizando C#</h1>
+                <asp:HyperLink ID="hlHome" NavigateUrl="~/Default.aspx" CssClass="linkbuttons" runat="server">Home</asp:HyperLink>
+                <asp:HyperLink ID="hlUsuario" NavigateUrl="~/Usuario.aspx" CssClass="linkbuttons" runat="server">Usuários</asp:HyperLink>
+                <asp:HyperLink ID="hlAutor" NavigateUrl="~/Autor.aspx" CssClass="linkbuttons" runat="server">Autores</asp:HyperLink>
+                <asp:HyperLink ID="hlFrase" NavigateUrl="~/Frase.aspx" CssClass="linkbuttons" runat="server">Frases</asp:HyperLink>
+                <asp:HyperLink ID="hlCategoria" NavigateUrl="~/Categoria.aspx" CssClass="linkbuttons" runat="server">Categorias</asp:HyperLink>
+                <asp:HyperLink ID="hlSair" NavigateUrl="~/Login.aspx" CssClass="linkbuttons" runat="server">Sair</asp:HyperLink>
+            </nav>
+        </header>
+
+        <main>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </main>
+
+        <footer>
+            <p>Back-End Frases Famosas - Site voltado para o administrador do sistema</p>
+            <p>Site Desenvolvido por <a href="https://github.com/Lucas-Alipio">Lucas Antonio Alípio de Souza</a></p>
+        </footer>
+        
+    </form>
+</body>
+</html>
